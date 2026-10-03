@@ -123,19 +123,24 @@
         text-align: center;
       }
 
-      .monogram {
-        height: 176px;
-        width: 176px;
-        margin: 0 auto 22px;
-        background: var(--red);
-        border: 7px solid #fff;
-        box-shadow: 0 8px 24px #10152515;
-        border-radius: 50%;
-        display: grid;
-        place-items: center;
-        color: #fff;
-        font: 64px Georgia,serif;
-      }
+.monogram {
+  width: 176px;
+  height: 176px;
+  margin: 0 auto 22px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 7px solid #fff;
+  box-shadow: 0 8px 24px #10152515;
+  flex-shrink: 0;
+}
+
+.monogram img {
+  width: 100%;
+  height: 100%;
+  display: block;
+  object-fit: cover;
+  object-position: center 30%;
+}
 
       .profile h1 {
         font-size: 29px;
@@ -468,8 +473,7 @@
     src="https://media.licdn.com/dms/image/v2/D4E03AQEdRYEPl5PHbA/profile-displayphoto-scale_400_400/B4EZngY4PwJgAg-/0/1760406242972?e=1792627200&v=beta&t=srxOTuAIbBff79zmIFqN70OxlWgUaFXcKn7p4u-6qw8"
     alt="Ibrahim Iqbal"
   >
-</div>
-            <h1>
+</div>    <h1>
               Ibrahim Iqbal
             </h1>
             <p class="school">
